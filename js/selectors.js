@@ -19,6 +19,7 @@ function divSelector() {
   return $('body .pics'); */
 }
 
-function firstListItem() {
-  return $('ul#pic-list li:first-child')[0];
+function firstListItem() { 
+  //Note: This appears to want the NodeList, not the node/element itself.
+  return $('ul#pic-list li:first-child');
 }
